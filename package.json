@@ -28,8 +28,6 @@
     "url": "https://github.com/bmpenuelas/waveform-render-vscode.git"
   },
   "activationEvents": [
-    "onCommand:waveformRender.start",
-    "onCommand:waveformRender.toggleLivePreview",
     "onWebviewPanel:waveformRender"
   ],
   "main": "./out/extension.js",
@@ -43,6 +41,11 @@
       {
         "command": "waveformRender.toggleLivePreview",
         "title": "Toggle Live Preview",
+        "category": "Waveform Render"
+      },
+      {
+        "command": "waveformRender.generateAscii",
+        "title": "Generate ASCII Art for Waveform",
         "category": "Waveform Render"
       }
     ],
